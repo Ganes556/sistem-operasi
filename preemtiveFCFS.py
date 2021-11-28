@@ -7,7 +7,7 @@ firstArrived = min(arrivalCopy)
 
 ganttChart = []
 wt = min(arrival)
-temp = 0
+
 for i in range(len(proses)):
     
     first = arrival.index(firstArrived)    
@@ -17,7 +17,6 @@ for i in range(len(proses)):
         wt += burst[first]
                 
         arrivalCopy.remove(firstArrived)
-        temp = firstArrived
         firstArrived = min(arrivalCopy)
         
     except Exception:      
@@ -30,5 +29,3 @@ for i in range(0,len(ganttChart)):
     count += ganttChart[i][1]-arrival[proses.index(ganttChart[i][0])]    
     
 print(count/len(proses))
-        
-
