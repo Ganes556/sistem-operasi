@@ -17,6 +17,7 @@ for i in range(len(proses)):
         wt += burst[first]
                 
         arrivalCopy.remove(firstArrived)
+        
         firstArrived = min(arrivalCopy)
         
     except Exception:      
