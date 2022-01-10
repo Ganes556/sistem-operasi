@@ -1,4 +1,3 @@
-# proses = [ "P" + str(i) for i in range(int(input("jumlah proses : ")))]
 arrival = [int(i) for i in input("Arrival : ").split(",")]
 burst = [int(i) for i in input("Burst : ").split(",")]
 
